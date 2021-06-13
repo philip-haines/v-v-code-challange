@@ -5,14 +5,19 @@
 	>
 		<h1 class="hero-text">{{ collection.handle }}</h1>
 	</section>
-	<select class="input--dropdown">
-		<option disabled="disabled" selected="selected" value="">Sort</option>
-		<option>Newest Arrival</option>
-		<option>A - Z</option>
-		<option>Z - A</option>
-		<option>Price Low to High</option>
-		<option>Price High to Low</option>
-	</select>
+	<div class="filter-wrapper">
+		<p class="results">{{ collection.all_products_count }} results</p>
+		<select class="input--dropdown">
+			<option disabled="disabled" selected="selected" value="">
+				Sort
+			</option>
+			<option>Newest Arrival</option>
+			<option>A - Z</option>
+			<option>Z - A</option>
+			<option>Price Low to High</option>
+			<option>Price High to Low</option>
+		</select>
+	</div>
 	<div class="collection-list">
 		{% for product in collection.products %}
 		<div class="product-card">
