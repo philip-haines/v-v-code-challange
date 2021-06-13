@@ -8,14 +8,19 @@
 		<option>Price High to Low</option>
 	</select>
 	<main>
-		<section class="collection-list">
-			{% for product in collection.products%}
+		<section id="collection-list">
 			<div class="product-card">
 				{%assign firstAvailableProduct =
 				product.first_available_variant%} <img {% if
 				firstAvailableProduct.image.src%} src="{{
 					firstAvailableProduct.image.src | img_url: "large"
-				}}" {% endif %} />
+				}}" {% endif %} alt="Picture of {{ product.title }}"/>
+				<div class="product-info">
+					<p class="product-text">{{ product.title }}</p>
+					<p class="product-text">
+						{{ product.price_min | | money_without_currency }}
+					</p>
+				</div>
 			</div>
 			{% endfor %}
 		</section>
