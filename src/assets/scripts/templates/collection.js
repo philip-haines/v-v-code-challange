@@ -4,7 +4,6 @@ import "../../styles/templates/collection.scss";
 // getAllProducts('test-collection') => returns a Promise, which resolves to an Array of Product Objects
 
 // Your Code Here
-getAllProducts("test-collection").then((products) => console.log(products));
 
 Shopify.queryParams = {};
 if (location.search.length) {
@@ -15,7 +14,6 @@ if (location.search.length) {
 		i < sortByOptionRaw.length;
 		i++
 	) {
-		console.log(location.search.substr(1).split("&"));
 		sortByValue = sortByOptionRaw[i].split("=");
 		if (sortByValue.length > 1) {
 			Shopify.queryParams[decodeURIComponent(sortByValue[0])] =

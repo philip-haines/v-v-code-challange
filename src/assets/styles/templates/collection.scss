@@ -27,13 +27,18 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	.input--dropdown {
+
+	.sort-by--container {
 		width: 20%;
+		.input--dropdown {
+			width: 100%;
+		}
 	}
 	.results {
 		color: #6d4fe4;
 	}
 }
+
 .collection-list {
 	margin-top: 2rem;
 	width: 100%;
@@ -90,7 +95,7 @@ $breakpoint: 768px;
 	}
 	.filter-wrapper {
 		flex-direction: column-reverse;
-		.input--dropdown {
+		.sort-by--container {
 			width: 100%;
 			margin-bottom: 1rem;
 		}
