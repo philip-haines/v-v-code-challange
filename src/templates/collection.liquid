@@ -9,6 +9,7 @@
 	</select>
 	<main>
 		<section id="collection-list">
+			{% for product in collection.products%}
 			<div class="product-card">
 				{%assign firstAvailableProduct =
 				product.first_available_variant%} <img {% if
