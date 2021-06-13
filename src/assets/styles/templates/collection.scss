@@ -1,4 +1,22 @@
 // your code here
 #collection-page {
-	background-color: red;
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.collection-list {
+	margin-top: 2rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 1rem;
+	.product-card {
+		width: 100%;
+		text-align: center;
+		.product-image {
+			width: 100%;
+		}
+	}
 }
