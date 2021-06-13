@@ -1,5 +1,22 @@
 // your code here
+.hero {
+	width: 96%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 3rem;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	.hero-text {
+		font-size: 3rem;
+		margin-bottom: 0;
+	}
+}
+
 #collection-page {
+	padding-top: 3rem;
 	width: 96%;
 	height: auto;
 	margin: 0 auto;
@@ -15,21 +32,6 @@
 	}
 	.results {
 		color: #6d4fe4;
-	}
-}
-
-.hero {
-	width: 100%;
-	height: 250px;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	margin-bottom: 3rem;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	.hero-text {
-		font-size: 3rem;
-		margin-bottom: 0;
 	}
 }
 .collection-list {
@@ -76,5 +78,24 @@
 				}
 			}
 		}
+	}
+}
+
+$breakpoint: 768px;
+@media (max-width: $breakpoint) {
+	.hero {
+		width: 100%;
+		height: 40vh;
+		margin: 0 auto;
+	}
+	.filter-wrapper {
+		flex-direction: column-reverse;
+		.input--dropdown {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+	.collection-list {
+		grid-template-columns: 1fr 1fr;
 	}
 }

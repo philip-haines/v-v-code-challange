@@ -1,10 +1,11 @@
+<section
+	style="background-image: url('{{ collection.image | img_url }}');"
+	class="hero"
+>
+	<h1 class="hero-text">{{ collection.handle }}</h1>
+</section>
+
 <div id="collection-page">
-	<section
-		style="background-image: url('{{ collection.image | img_url }}');"
-		class="hero"
-	>
-		<h1 class="hero-text">{{ collection.handle }}</h1>
-	</section>
 	<div class="filter-wrapper">
 		<p class="results">{{ collection.all_products_count }} results</p>
 		<select class="input--dropdown">
