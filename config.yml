@@ -1,0 +1,10 @@
+theme:
+  password: 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
+  theme_id: "123309621454"
+  store: phil-haines-code-challenge.myshopify.com
+  ignore_files:
+    - settings_data.json
+    - src
+    - node_modules
+    - package.json
+    - package-lock.json
