@@ -1,10 +1,23 @@
 <div id="collection-page">
-  <select class="input--dropdown">
-    <option disabled="disabled" selected="selected" value="">Sort</option> 
-    <option>Newest Arrival</option>
-    <option>A - Z</option>
-    <option>Z - A</option>
-    <option>Price Low to High</option>
-    <option>Price High to Low</option>
-  </select>
+	<select class="input--dropdown">
+		<option disabled="disabled" selected="selected" value="">Sort</option>
+		<option>Newest Arrival</option>
+		<option>A - Z</option>
+		<option>Z - A</option>
+		<option>Price Low to High</option>
+		<option>Price High to Low</option>
+	</select>
+	<main>
+		<section class="collection-list">
+			{% for product in collection.products%}
+			<div class="product-card">
+				{%assign firstAvailableProduct =
+				product.first_available_variant%} <img {% if
+				firstAvailableProduct.image.src%} src="{{
+					firstAvailableProduct.image.src | img_url: "large"
+				}}" {% endif %} />
+			</div>
+			{% endfor %}
+		</section>
+	</main>
 </div>
