@@ -1,4 +1,10 @@
 <div id="collection-page">
+	<section
+		style="background-image: url('{{ collection.image | img_url }}');"
+		class="hero"
+	>
+		<h1 class="hero-text">{{ collection.handle }}</h1>
+	</section>
 	<select class="input--dropdown">
 		<option disabled="disabled" selected="selected" value="">Sort</option>
 		<option>Newest Arrival</option>
