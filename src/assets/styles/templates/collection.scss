@@ -5,6 +5,19 @@
 	margin: 0 auto;
 }
 
+.filter-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	.input--dropdown {
+		width: 20%;
+	}
+	.results {
+		color: #6d4fe4;
+	}
+}
+
 .hero {
 	width: 100%;
 	height: 250px;
