@@ -54,7 +54,6 @@ function findVariantPicture(selectedColor, product, element) {
 	}
 
 	const joinedSelection = splitSelected.join("-");
-	console.log(joinedSelection);
 	for (let i = 0; i < product.variants.length; i++) {
 		const splitURL = product.variants[i].image.src.split("_");
 		for (let j = 0; j < colors[0]?.values?.length; j++) {
@@ -110,7 +109,6 @@ function renderOptionBubbles(product, container, element) {
 		optionInput.className = "option-bubble";
 		optionInput.style.background = "none";
 		optionInput.addEventListener("click", function (e) {
-			console.log(e.target.value);
 			findVariantPicture(e.target.value, product, element);
 		});
 		setBubbleColor(color, optionInput);
