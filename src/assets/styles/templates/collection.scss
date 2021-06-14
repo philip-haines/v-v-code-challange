@@ -61,6 +61,7 @@
 				width: 80%;
 				margin: 0 auto;
 				display: flex;
+				flex-wrap: wrap;
 				justify-content: space-around;
 				align-items: center;
 				.option-bubble {
@@ -71,15 +72,6 @@
 				}
 				.option-bubble:focus {
 					border: 5px solid black;
-				}
-				.option-one {
-					background-color: #cdcdcd;
-				}
-				.option-two {
-					background-color: #2f3676;
-				}
-				.option-three {
-					background-color: #af806e;
 				}
 			}
 		}

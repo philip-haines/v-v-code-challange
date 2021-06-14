@@ -17,19 +17,12 @@
   </div>
 
 	</div>
-	<div class="collection-list">
-		{% for product in collection.products %}
+	<div class="collection-list"> 
+		<!-- {% for product in collection.products %}
 		<div class="product-card">
-			{% assign firstAvailable = product.first_available_variant %}
+			{% assign firstAvailable = product.variants.first %}
 			<img
-				{%
-				if
-				firstAvailable.image.src
-				%}
-				src="{{ firstAvailable.image.src | img_url: 'large' }}"
-				{%
-				endif
-				%}
+			
 				class="product-image"
 				alt="Product Picture"
 			/>
@@ -45,6 +38,6 @@
 				</div>
 			</div>
 		</div>
-		{% endfor %}
+		{% endfor %} -->
 	</div>
 </div>
