@@ -52,8 +52,6 @@ function findVariantPicture(selectedColor, product, element) {
 	} else {
 		selected = selectedColor;
 	}
-
-	const joinedSelection = splitSelected.join("-");
 	for (let i = 0; i < product.variants.length; i++) {
 		const splitURL = product.variants[i].image.src.split("_");
 		for (let j = 0; j < colors[0]?.values?.length; j++) {
